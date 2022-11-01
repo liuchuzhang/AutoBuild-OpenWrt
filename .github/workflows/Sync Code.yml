@@ -31,7 +31,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        ref: master
+        ref: main
         fetch-depth: 0
         lfs: true
 
@@ -56,5 +56,5 @@ jobs:
         
     - name: Update My Script
       env:
-        DOWNSTREAM_BRANCH: master
+        DOWNSTREAM_BRANCH: main
       run: git push origin $DOWNSTREAM_BRANCH
